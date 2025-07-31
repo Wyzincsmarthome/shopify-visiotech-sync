@@ -5,8 +5,8 @@ import os
 import re
 import time
 
-with open("shopify_config.json") as f:
-    config = json.load(f)
+SHOP_URL = os.environ["SHOP_URL"]
+ACCESS_TOKEN = os.environ["SHOPIFY_ACCESS_TOKEN"]
 
 SHOP_URL = config["shop_url"]
 ACCESS_TOKEN = config["access_token"]
