@@ -1,15 +1,11 @@
 import pandas as pd
 import requests
-import json
 import os
 import re
 import time
 
-with open("shopify_config.json") as f:
-    config = json.load(f)
-
-SHOP_URL = config["shop_url"]
-ACCESS_TOKEN = config["access_token"]
+SHOP_URL = os.environ["SHOP_URL"]
+ACCESS_TOKEN = os.environ["SHOPIFY_ACCESS_TOKEN"]
 API_VERSION = "2023-07"
 
 CSV_PATH = "csv-input/visiotech.csv"
