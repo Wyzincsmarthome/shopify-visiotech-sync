@@ -6,6 +6,7 @@ on:
       - 'csv-input/visiotech.csv'
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   run-script:
