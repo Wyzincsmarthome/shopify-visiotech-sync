@@ -3,6 +3,7 @@ import requests
 import os
 import re
 import time
+import json
 
 SHOP_URL = os.environ["SHOP_URL"]
 ACCESS_TOKEN = os.environ["SHOPIFY_ACCESS_TOKEN"]
